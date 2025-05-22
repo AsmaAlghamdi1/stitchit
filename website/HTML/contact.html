@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;400&display=swap"
+        rel="stylesheet">
+    <title>Contact us</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">St<span class="yellow">i</span><span class="blue">t</span><span
+                    class="orange">ch</span><span class="yellow">i</span><span class="blue">t</span></div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="main.html">CUSTOMIZE</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+                <li class="cart-icon"><a href="orders.html"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="top">
+        <hr>
+    </div>
+
+    <div>
+        <h2 class="title">
+            <span class="pink">C</span><span class="yellow">O</span><span class="blue">N</span><span
+                class="orange">T</span><span class="orange">A</span><span class="pink">C</span><span
+                class="yellow">T</span>
+            <span class="space"></span><span class="blue">U</span><span class="yellow">S</span>
+        </h2>
+    </div>
+
+    <div class="contact-form">
+        <form class="info" id="contactForm">
+            <div class="Name">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" pattern="[a-zA-Z\s]{3,}"
+                    required>
+                <span id="firstName-error" class="error-message"></span>
+
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" pattern="[a-zA-Z\s]{3,}"
+                    required>
+                <span id="lastName-error" class="error-message"></span>
+            </div>
+
+            <div class="email">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <span id="email-error" class="error-message"></span>
+            </div>
+
+            <div class="phone">
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{9}" minlength="9"
+                    maxlength="9" required>
+                <span id="phone-error" class="error-message"></span>
+            </div>
+
+            <div>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                <span id="message-error" class="error-message"></span>
+            </div>
+
+            <div>
+                <button type="submit" id="submit">Send Message</button>
+            </div>
+        </form>
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Help</h3>
+                <p>Customer Service</p>
+                <p>Contact</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social</h3>
+                <p>Instagram</p>
+                <p>X</p>
+                <p>Facebook</p>
+                <p>Tik Tok</p>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <p>Privacy Policy</p>
+                <p>Term of use</p>
+            </div>
+        </div>
+
+        <hr>
+        <p class="copyright">Copyright &copy; 2025 StitchIt All Rights Reserved</p>
+        <div class="back-to-top">
+            <a href="#top"> <img src="../images/up-arrow.png" alt="up Arrow" style="width: 26px; height: 26px;"></a>
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

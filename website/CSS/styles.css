@@ -1,0 +1,776 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+th
+body {
+    background: #fefaf5;
+    color: #444444;
+}
+
+/* Navigation */
+header {
+    width: 100%;
+    padding: 20px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fefaf5;
+    display: flex;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 800px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #787878;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #8DBBB8;
+}
+
+nav ul li a.active {
+    color: #8DBBB8;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #EAAEB2;
+}
+
+.pink {
+    color: #EAAEB2;
+}
+
+.yellow {
+    color: #F0B35B;
+}
+
+.blue {
+    color: #8DBBB8;
+}
+
+.orange {
+    color: #E17349;
+}
+
+.space {
+    display: inline-block;
+    width: 10px;
+}
+
+.cart-icon {
+    font-size: 18px;
+    color: #444444;
+}
+
+.cart-icon-active {
+    font-size: 18px;
+    color: #8DBBB8;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 40px 0;
+    padding-top: 70px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 5%;
+}
+
+.content {
+    width: 50%;
+}
+
+.content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #444444;
+    letter-spacing: 3px;
+}
+
+#light {
+    font-weight: 300;
+}
+
+.content p {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #656565;
+}
+
+.start-btn {
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background: #fff;
+    color: #8DBBB8;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(141, 187, 184, 0.5);
+}
+
+.start-btn:hover {
+    background: #8DBBB8;
+    color: #fff;
+    box-shadow: 0px 6px 15px rgba(141, 187, 184, 0.7);
+}
+
+.checkout-btn {
+    margin-top: 40px;
+    padding: 10px 100px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    color: #EAAEB2;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(187, 135, 162, 0.5);
+    justify-self: center;
+}
+
+.checkout-btn:hover {
+    background: #EAAEB2;
+    color: #fff;
+    box-shadow: 0px 6px 15px rgba(187, 135, 162, 0.5);
+}
+
+/* Social Icons */
+.social-icons {
+    font-size: 23px;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    color: #444444;
+}
+
+.social-icons i:hover {
+    color: #8DBBB8;
+    cursor: pointer;
+}
+
+/* Pattern Design */
+.pattern {
+    width: 40%;
+    height: 90vh;
+    position: fixed;
+    background: url('../images/geo.png');
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/* Contact Us Style */
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 20px;
+}
+
+.info {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.info input,
+.info textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.info textarea {
+    height: 100px;
+    resize: none;
+}
+
+button#submit {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #EAAEB2, #8DBBB8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #8DBBB8, #EAAEB2);
+}
+
+footer {
+    background: #969696;
+    padding: 20px;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.back-to-top {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #8DBBB8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.Name {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* About Us Style */
+.mission {
+    position: relative;
+    text-align: center;
+    padding: 100px 90px;
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+.mission::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/silk.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+    z-index: -1;
+}
+
+.mission span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+
+.feature-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+
+.table {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+details {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+details[open] {
+    background: #e6e6e6;
+}
+
+summary {
+    list-style: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+summary::after {
+    content: " ▼";
+    font-size: 16px;
+}
+
+details[open] summary::after {
+    content: " ▲";
+}
+
+table {
+    width: 70%;
+    justify-self: center;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #8DBBB8;
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    background: #fff;
+    font-size: 16px;
+    color: #EAAEB2;
+}
+
+td a {
+    color: #F0B35B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td.id {
+    color: #E17349;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Step Indicator */
+.step-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.step-circle {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.step-line {
+    width: 50px;
+    height: 5px;
+    background-color: #ddd;
+}
+
+.step-circle.active {
+    background-color: #EAAEB2;
+    color: white;
+}
+
+.step-line {
+    width: 50px;
+    /* Adjust width */
+    height: 5px;
+    /* Adjust thickness */
+    background-color: #ddd;
+    /* Default gray */
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+/* Change color when active */
+.step-circle.active+.step-line {
+    background-color: #EAAEB2;
+    /* Green */
+}
+
+#multiStepForm {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: none;
+    padding: 20px;
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+/* Labels & Inputs */
+.label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+button.button {
+    padding: 10px 20px;
+    background: #F0B35B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.button:hover {
+    background: #EAAEB2;
+}
+
+input.input,
+select.select,
+textarea.textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/* ========== Media Queries ========== */
+
+
+/* for phone screens */
+@media (max-width: 440px) {
+
+    #multiStepForm {
+        width: 80%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mission span {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .mission p {
+        font-size: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: left;
+        height: auto;
+        margin-top: 30px;
+        padding: 70px 1%;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .pattern {
+        margin-bottom: 20px;
+        background: url('../images/geo.png');
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        order: -1;
+    }
+
+    header {
+        padding: 15px 10%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        gap: 10px;
+        margin-left: 0;
+        text-align: center;
+        
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .social-icons {
+        font-size: 21px;
+        gap: 15px;
+        justify-content: left;
+    }
+}
+
+/* شاشات الجوال الصغيرة (≤ 576px) */
+@media  (min-width: 440px) and (max-width: 576px) {
+
+    #multiStepForm {
+        width: 80%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mission span {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .mission p {
+        font-size: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: left;
+        height: auto;
+        margin-top: 8px;
+        padding: 70px 1%;
+    }
+
+    .content {
+        width: 80%;
+        margin-top: 20px;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .pattern {
+        background: url('../images/geo.png');
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        order: -1;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        flex-direction: row;
+        /* text-align: center; */
+    }
+
+    nav ul {
+        gap: 20px;
+        margin-left: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .social-icons {
+        font-size: 21px;
+        gap: 15px;
+        justify-content: left;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 576px) and (max-width: 992px) {
+
+    .content {
+        width: 55%;
+        margin-top: 90px;
+        
+    }
+
+    nav ul {
+        gap: 20px;
+        margin-left: auto;
+    }
+
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .features {
+        gap: 30px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* Large screens (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .hero {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-between;
+        padding: 100px 5%;
+    }
+
+    .content {
+        width: 50%;
+    }
+
+    .pattern {
+        width: 40%;
+        height: 90vh;
+        position: fixed;
+        background: url('../images/geo.png');
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+css  .error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}

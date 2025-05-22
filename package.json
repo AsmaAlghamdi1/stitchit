@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cros": "^1.1.0",
+    "express": "^5.1.0",
+    "multer": "^1.4.5-lts.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.14.0",
+    "path": "^0.12.7"
+  },
+  "name": "web-development-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SWELeen/Web-Development-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SWELeen/Web-Development-Project/issues"
+  },
+  "homepage": "https://github.com/SWELeen/Web-Development-Project#readme"
+}
