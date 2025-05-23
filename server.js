@@ -12,7 +12,7 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use("/", express.static("./website")); // Frontend files
+app.use("/", express.static("./website/HTML")); // Frontend files
 app.use("/uploads", express.static("uploads")); // Uploaded files
 
 // Multer setup for file uploads
