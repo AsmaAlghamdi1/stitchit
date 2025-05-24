@@ -94,7 +94,6 @@ app.post('/submit', upload.single('file'), (req, res) => {
 
 // Route to get the latest order
 app.get('/latest-order', (req, res) => {
-    res.send('الباك اند شغال كويس')
     const query = `SELECT * FROM orders ORDER BY id DESC LIMIT 1`;
 
     db.query(query, (err, results) => {
