@@ -132,7 +132,7 @@ app.post("/contact", (req, res) => {
     }
 
     const sql = `
-        INSERT INTO contacts (first_name, last_name, email, phone, message)
+        INSERT INTO contact (first_name, last_name, email, phone, message)
         VALUES (?, ?, ?, ?, ?)
     `;
 
