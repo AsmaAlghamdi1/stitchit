@@ -13,6 +13,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/", express.static("./website")); // Frontend files
+// app.get("/", (req, res) => {
+//     res.sendFile(path.join(__dirname, "website", "index.html"));
+// });
 app.use("/uploads", express.static("uploads")); // Uploaded files
 
 // Multer setup for file uploads
@@ -148,5 +151,5 @@ app.post("/contact", (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-    console.log(` Server is running on http://localhost:${PORT}/HTML/index.html`);
+    console.log(` Server is running on http://localhost:${PORT}/index.html`);
 });
