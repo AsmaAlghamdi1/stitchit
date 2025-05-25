@@ -19,6 +19,10 @@ app.use("/", express.static("./website")); // Frontend files
 app.use("/uploads", express.static("uploads")); // Uploaded files
 
 // Multer setup for file uploads
+const fs = require('fs');
+if (!fs.existsSync('uploads')) {
+    fs.mkdirSync('uploads');
+}
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, 'uploads/');
