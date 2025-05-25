@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const data = { firstName, lastName, email, phone, message };
 
-            fetch("http://localhost:3000/contact", {
+            fetch("/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
             formData.append('clothingType', document.getElementById('clothing-type').value);
 
             try {
-                const response = await fetch('http://localhost:3000/submit', {
+                const response = await fetch('/submit', {
                     method: 'POST',
                     body: formData,
                 });
