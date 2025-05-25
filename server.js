@@ -148,5 +148,5 @@ app.post("/contact", (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-    console.log(`🚀 Server is running on http://localhost:${PORT}/HTML/index.html`);
+    console.log(` Server is running on http://localhost:${PORT}/HTML/index.html`);
 });
